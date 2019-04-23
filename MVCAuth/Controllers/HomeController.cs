@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using MVCAuth.Models;
-using MVCAuth.ViewModels;
+//using MVCAuth.ViewModels;
 using StravaSharp;
 
 namespace MVCAuth.Controllers
@@ -27,18 +27,36 @@ namespace MVCAuth.Controllers
 
         public async Task<ActionResult> Index()
         {
-            var authenticator = CreateAuthenticator();
-            var viewModel = new HomeViewModel(authenticator.IsAuthenticated);
-            if (authenticator.IsAuthenticated)
-            {
-                var client = new StravaSharp.Client(authenticator);
-                var activities = await client.Activities.GetAthleteActivities();
-                foreach (var activity in activities)
-                {
-                    viewModel.Activities.Add(new ActivityViewModel(activity));
-                }
-            }
-            return View(viewModel);
+            //var authenticator = CreateAuthenticator();
+            //var viewModel = new HomeViewModel(authenticator.IsAuthenticated);
+            //if (authenticator.IsAuthenticated)
+            //{
+            //    var client = new StravaSharp.Client(authenticator);
+            //    //var activities = await client.Activities.GetAthleteActivities();
+            //    //foreach (var activity in activities)
+            //    //{
+            //    //    viewModel.Activities.Add(new ActivityViewModel(activity));
+            //    //}
+            //    //if (client.Athletes!=null)
+            //    //{ 
+            //    //    var ath = await client.Athletes.GetCurrent();
+            //    //    var athlete = new Models.Athlete
+            //    //    {
+            //    //        FirstName = ath.FirstName,
+            //    //        LastName = ath.LastName,
+            //    //        City = ath.City,
+            //    //        State = ath.State
+            //    //    };
+            //    //    _context.Athletes.Add(athlete);
+            //    //    _context.SaveChanges();
+            //    //}                
+            //}
+
+            var athletes = _context.Athletes.ToList();
+
+
+
+            return View(athletes);
         }
 
         Authenticator CreateAuthenticator()

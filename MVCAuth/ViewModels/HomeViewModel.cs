@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Web;
+using MVCAuth.Models;
 
 namespace MVCAuth.ViewModels
 {
@@ -16,5 +17,8 @@ namespace MVCAuth.ViewModels
         public bool IsAuthenticated { get; private set; }
 
         public IList<ActivityViewModel> Activities { get; } = new ObservableCollection<ActivityViewModel>();
+        public IList<Athlete> Ath { get; } = new ObservableCollection<Athlete>();
+
+
     }
 }

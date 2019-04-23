@@ -234,13 +234,19 @@
     <Compile Include="Migrations\201904112134466_InitialMigration.Designer.cs">
       <DependentUpon>201904112134466_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904161923289_Created Athlete model.cs" />
+    <Compile Include="Migrations\201904161923289_Created Athlete model.Designer.cs">
+      <DependentUpon>201904161923289_Created Athlete model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Athlete.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\ActivityViewModel.cs" />
+    <Compile Include="ViewModels\AthleteViewModel.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -325,6 +331,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904112134466_InitialMigration.resx">
       <DependentUpon>201904112134466_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904161923289_Created Athlete model.resx">
+      <DependentUpon>201904161923289_Created Athlete model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

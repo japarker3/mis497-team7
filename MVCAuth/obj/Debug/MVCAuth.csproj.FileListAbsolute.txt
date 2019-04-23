@@ -137,3 +137,4 @@ C:\Users\jonal\Desktop\497 project\MVCAuth\MVCAuth\bin\RestSharp.xml
 C:\Users\jonal\Desktop\497 project\MVCAuth\MVCAuth\obj\Debug\MVCAuth.Migrations.InitialCreate.resources
 C:\Users\jonal\Desktop\497 project\MVCAuth\MVCAuth\obj\Debug\MVCAuth.csproj.GenerateResource.cache
 C:\Users\jonal\Desktop\497 project\MVCAuth\MVCAuth\obj\Debug\MVCAuth.Migrations.InitialMigration.resources
+C:\Users\jonal\Desktop\497 project\MVCAuth\MVCAuth\obj\Debug\MVCAuth.Migrations.CreatedAthletemodel.resources
